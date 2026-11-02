@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LinkTop: descubra ofertas e produtos recomendados. Alguns links podem ser links de afiliado.">
+  <title>LinkTop — ofertas e recomendações</title>
+  <style>
+    :root{color-scheme:dark;--bg:#100d1b;--panel:#1c1730;--panel2:#251d3d;--text:#f8f6ff;--muted:#b9b1ce;--accent:#b89aff;--line:#3b3155}
+    *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:linear-gradient(160deg,#171027,#0d0b15 65%);color:var(--text)}
+    header{padding:22px max(20px,calc((100% - 1100px)/2));border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .brand{font-weight:850;font-size:1.55rem;letter-spacing:-.04em}.brand span{color:var(--accent)}.tag{color:var(--muted);font-size:.9rem}
+    main{max-width:1100px;margin:auto;padding:34px 20px 60px}.hero{padding:28px;border:1px solid var(--line);border-radius:24px;background:radial-gradient(ellipse at top right,#39275e 0,transparent 55%),var(--panel);margin-bottom:26px}
+    h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.05;letter-spacing:-.04em;margin:0 0 14px}.hero p{color:var(--muted);max-width:680px;line-height:1.6}
+    .search{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.search input{flex:1;min-width:200px;padding:13px 15px;border-radius:12px;border:1px solid var(--line);background:#100d1b;color:var(--text);font:inherit}
+    button,.button{border:0;border-radius:12px;padding:12px 15px;background:var(--accent);color:#1b1230;font-weight:750;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:28px 0 15px}.section-head h2{margin:0;font-size:1.35rem}.section-head p{margin:0;color:var(--muted);font-size:.9rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px;display:flex;flex-direction:column;min-height:230px}
+    .emoji{font-size:2rem;margin-bottom:12px}.category{font-size:.76rem;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;font-weight:800}.card h3{margin:8px 0}.card p{color:var(--muted);line-height:1.5;flex:1;margin:0 0 16px}.card .actions{display:flex;gap:8px;flex-wrap:wrap}.card .actions button,.card .actions a{font-size:.88rem;padding:10px 12px}.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--line)}
+    .notice{margin-top:22px;color:var(--muted);font-size:.85rem;line-height:1.6;border-top:1px solid var(--line);padding-top:18px}.empty{display:none;color:var(--muted);padding:20px 0}
+    footer{border-top:1px solid var(--line);padding:24px 20px;text-align:center;color:var(--muted);font-size:.85rem}
+  </style>
+</head>
+<body>
+<header><div class="brand">Link<span>Top</span></div><div class="tag">Ofertas, descobertas e recomendações</div></header>
+<main>
+  <section class="hero">
+    <h1>Encontre algo que<br>vale a pena descobrir.</h1>
+    <p>Explore recomendações de produtos e ofertas em um só lugar. Esta é a página inicial do LinkTop; os produtos abaixo são exemplos e devem ser substituídos por produtos e links de afiliado reais antes da divulgação pública.</p>
+    <div class="search"><input id="search" type="search" placeholder="Buscar produto ou categoria..." aria-label="Buscar produtos"><button id="clear">Limpar busca</button></div>
+  </section>
+  <div class="section-head"><h2>Produtos em destaque</h2><p id="count">3 exemplos</p></div>
+  <section class="grid" id="products">
+    <article class="card" data-search="fone de ouvido tecnologia acessórios">
+      <div class="emoji" aria-hidden="true">🎧</div><div class="category">Tecnologia</div><h3>Fone de ouvido sem fio</h3>
+      <p>Exemplo de produto. Adicione uma descrição verdadeira, preço atualizado e seu link de afiliado.</p>
+      <div class="actions"><button class="secondary copy" data-link="COLOQUE_SEU_LINK_DE_AFILIADO_AQUI">Copiar link</button><a class="button share" href="#" data-title="Fone de ouvido sem fio" data-link="COLOQUE_SEU_LINK_DE_AFILIADO_AQUI">Compartilhar</a></div>
+    </article>
+    <article class="card" data-search="garrafa térmica casa cozinha">
+      <div class="emoji" aria-hidden="true">🥤</div><div class="category">Casa e cozinha</div><h3>Garrafa térmica</h3>
+      <p>Exemplo de produto. Confira as características e informe somente benefícios que possam ser comprovados.</p>
+      <div class="actions"><button class="secondary copy" data-link="COLOQUE_SEU_LINK_DE_AFILIADO_AQUI">Copiar link</button><a class="button share" href="#" data-title="Garrafa térmica" data-link="COLOQUE_SEU_LINK_DE_AFILIADO_AQUI">Compartilhar</a></div>
+    </article>
+    <article class="card" data-search="mochila viagem acessórios">
+      <div class="emoji" aria-hidden="true">🎒</div><div class="category">Acessórios</div><h3>Mochila para o dia a dia</h3>
+      <p>Exemplo de produto. Troque este conteúdo por informações reais e pelo endereço de afiliado correto.</p>
+      <div class="actions"><button class="secondary copy" data-link="COLOQUE_SEU_LINK_DE_AFILIADO_AQUI">Copiar link</button><a class="button share" href="#" data-title="Mochila para o dia a dia" data-link="COLOQUE_SEU_LINK_DE_AFILIADO_AQUI">Compartilhar</a></div>
+    </article>
+  </section>
+  <p class="empty" id="empty">Nenhum produto encontrado. Tente outro termo.</p>
+  <p class="notice"><strong>Transparência:</strong> alguns links deste site poderão ser links de afiliado, o que significa que o responsável pode receber comissão por compras qualificadas, sem custo adicional para você. Os produtos e links desta versão são demonstrativos. O site ainda não está conectado automaticamente ao Google, Facebook ou a programas de afiliados.</p>
+</main>
+<footer>© <span id="year"></span> LinkTop · Recomendações com transparência</footer>
+<script>
+  const search = document.getElementById('search');
+  const cards = [...document.querySelectorAll('.card')];
+  function filterProducts(){
+    const term = search.value.trim().toLocaleLowerCase('pt-BR');
+    let shown = 0;
+    cards.forEach(card => {
+      const match = (card.innerText + ' ' + card.dataset.search).toLocaleLowerCase('pt-BR').includes(term);
+      card.style.display = match ? 'flex' : 'none';
+      if(match) shown++;
+    });
+    document.getElementById('count').textContent = `${shown} ${shown === 1 ? 'produto' : 'produtos'} exibidos`;
+    document.getElementById('empty').style.display = shown ? 'none' : 'block';
+  }
+  search.addEventListener('input', filterProducts);
+  document.getElementById('clear').addEventListener('click', () => {search.value='';filterProducts();search.focus();});
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.querySelectorAll('.copy').forEach(btn => btn.addEventListener('click', async () => {
+    const link = btn.dataset.link;
+    if(link === 'COLOQUE_SEU_LINK_DE_AFILIADO_AQUI'){alert('Antes de divulgar, substitua o link de exemplo pelo seu link real de afiliado.');return;}
+    try { await navigator.clipboard.writeText(link); btn.textContent='Link copiado!'; setTimeout(()=>btn.textContent='Copiar link',1600); }
+    catch(e) { prompt('Copie seu link:', link); }
+  }));
+  document.querySelectorAll('.share').forEach(a => a.addEventListener('click', async e => {
+    e.preventDefault();
+    const link = a.dataset.link, title = a.dataset.title;
+    if(link === 'COLOQUE_SEU_LINK_DE_AFILIADO_AQUI'){alert('Antes de compartilhar, substitua o link de exemplo pelo seu link real de afiliado.');return;}
+    const data = {title, text:`Confira este produto: ${title}`, url:link};
+    if(navigator.share){try{await navigator.share(data);}catch(e){}}
+    else {try{await navigator.clipboard.writeText(`${data.text} ${link}`);alert('Texto e link copiados para compartilhar.');}catch(e){prompt('Copie para compartilhar:',`${data.text} ${link}`);}}
+  }));
+</script>
+</body>
+</html>
